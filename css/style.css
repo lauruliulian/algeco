@@ -1,0 +1,342 @@
+/********************************************************
+Global styles
+********************************************************/
+* {
+  font-family: 'Lugrasimo', cursive;
+  color: #097054;
+  outline: none;
+}
+h1, h2 {
+  color: #7F7F7F;
+  text-align: center;
+  margin: 30px 0;
+}
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 2.2em;
+}	
+.clearfix {
+  clear: both;
+}
+.last {
+  margin-right: 0 !important;
+}
+/********************************************************
+Layout
+********************************************************/
+body, html {
+  height: 100%;
+  min-width: 1140px;
+  margin: 0;
+}
+.page {
+  min-height: 100%;
+}
+/********************************************************
+Header
+********************************************************/
+.header {
+  box-shadow: 0 2px 2px #097054;
+  height: 150px;
+  margin-bottom: 30px;
+}
+.container {
+  width: 1140px;
+  margin: auto;
+}
+.logo {
+  width: 200px;
+  float: left;
+  margin: -8px 30px 10px 0;
+}
+.nav {
+  width: 910px;
+  height: 50px;
+  float: left;
+  margin-top: 50px;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.nav ul li {
+  float: left;
+  position: relative;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: lowercase;
+  padding: 0 20px;
+  line-height: 45px;
+  display: block;
+  border-bottom: 5px solid transparent;
+}
+.nav ul li a:hover {
+  border-bottom: 5px solid #f90 !important;
+}
+.active {
+  color: #f90;
+}
+.nav ul li ul {
+  white-space: nowrap;
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  left: 0;
+  padding-top: 50px;
+  border-top: none;
+  display: none;
+}
+.nav ul li ul li {
+  float: none;
+  background-color: #fff;
+  border-left: 1px solid #097054;
+  border-right: 1px solid #097054;
+}
+.nav ul li ul li:first-child {
+  box-shadow: 0 4px 2px -2px #097054 inset;
+}
+.nav ul li ul li:last-child {
+  border-bottom: 1px solid #097054;
+}
+.nav ul li:hover ul {
+  display: block;
+}
+/********************************************************
+Banner, map
+********************************************************/
+.slide img {
+  width: 1140px;
+  height: auto;
+  padding-bottom:50px;
+}
+.slide, .map {
+  background-image: url(../images/shadow-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 50px;
+}
+/********************************************************
+produse links
+********************************************************/
+.produse-link {
+  width: 270px;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.produse-link a {
+  text-decoration: none;
+}
+.produse-link img {
+  width: 260px;
+  height: 163px;
+  border: 5px solid #fff;
+  border-radius: 10%;
+  box-shadow: 0 0 2px 1px #097054;
+}
+.produse-link h1 {
+  font-size: 1.4em;
+  color: #f90;
+  margin: 0 0 15px 0;
+}
+/********************************************************
+Reviews
+********************************************************/
+.review {
+  width: 560px;
+  float: left;
+  margin-right: 20px;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.review::first-letter {
+  font-size: 2.4em;
+  line-height: 100%;
+  float: left;
+  margin-right: 5px;
+  color: 053F92;
+}
+/********************************************************
+Footer
+********************************************************/
+.push {
+  height: 80px;
+  clear: both;
+}
+.footer {
+  box-shadow: 0 -2px 2px #097054;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  margin-top: -50px;
+}
+/********************************************************
+Menu filters
+********************************************************/
+.filters {
+  text-align: center;
+}
+.filters a, input[type="submit"], input[type="reset"] {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: 2px solid #097054;
+}
+.filters a:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+  color: #f90;
+  border-color: #f90;
+  box-shadow: 0 0 2px 1px #f90;
+}
+/********************************************************
+Menu
+********************************************************/
+.produse-item {
+  width: 1200px;
+  position:right;
+  /*float: left;*/
+  margin: 0 40px 20px 0;
+}
+.title {
+  float: center;
+  width: 240x;
+  margin-right: 20px;
+  font-size: 1.1em;
+  position:center;
+  text-align:center;
+}
+/*
+.price {
+  float: right;
+  width: 160px;
+  text-align: right;
+  font-size: 1.1em;
+  font-weight: bold;
+  */
+}
+.description {
+  margin: 10px 15px 0 0;
+  position:center;
+}
+/********************************************************
+Gallery
+********************************************************/
+.image {
+  width: 260px;
+  float: left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px #097054;
+  overflow: hidden;
+  transition: border-radius 0.5s;
+}
+.image img {
+  width: 260px;
+  height: 205px;
+  vertical-align: top;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.image p {
+  background-color: #700;
+  background-color: rgba(102, 102, 102, 0.7);
+  color: #f90;
+  font-weight: bold;
+  padding: 20px;
+  width: 220px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.image:hover {
+  border-radius: 25%;
+}
+.image:hover p, .image:hover img {
+  opacity: 1;
+}
+/********************************************************
+Contact
+********************************************************/
+.contact-form, .feedback-form, .contact-address {
+  float: left;
+  width: 360px;
+  margin-right: 30px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input[type="text"], textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 10px;
+  border: solid 1px #999;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+  height: 100px;
+}
+input[type="submit"], input[type="reset"] {
+  margin: 0 20px 0 0;
+  background-color: #fff;
+  padding: 5px;
+  width: 80px;
+}
+.contact-address h2 {
+  color: #097054;
+  text-align: left;
+  margin: 15px 0;
+}
+.contact-address ul {
+  padding: 0;
+  list-style-position: inside;
+}
+.contact-address a {
+  text-decoration: none;
+  font-weight: bold;
+}
+/********************************************************
+Social links
+********************************************************/
+.social {
+  margin: 16px 0;
+}
+.social a {
+  width: 32px;
+  height: 32px;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-image: url(../images/social-sprite-32.png);
+  text-indent: -10000px;
+}
+#twitter {
+  background-position: -32px 0;
+}
+#google-plus {
+  background-position: -64px 0;
+}
+#instagram {
+  background-position: -96px 0;
+}
+#pinterest {
+  background-position: -128px 0;
+}
